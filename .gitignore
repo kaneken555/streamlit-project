@@ -1,0 +1,56 @@
+# =========================================
+# 🧹 Python / Streamlit / RAG プロジェクト用
+# =========================================
+
+# Python キャッシュ
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.log
+
+# 仮想環境
+venv/
+env/
+.venv/
+.env/
+*.env
+
+# Streamlit Secrets（APIキー等）
+.streamlit/secrets.toml
+
+# ChromaDB（自動生成データ）
+chroma_db/
+
+# RAG用一時ファイル・ベクトルデータ
+*.npy
+*.npz
+*.pkl
+
+# Ollama キャッシュ（ローカルモデルなど）
+.ollama/
+
+# Jupyter Notebook チェックポイント
+.ipynb_checkpoints/
+
+# OS/IDE 系
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker / Build 関連（必要に応じて）
+*.log
+*.pid
+*.tmp
+*.bak
+*.tar
+*.zip
+
+# Streamlit キャッシュ
+.streamlit/cache/
+.streamlit/logs/
