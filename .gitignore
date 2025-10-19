@@ -54,3 +54,7 @@ Thumbs.db
 # Streamlit キャッシュ
 .streamlit/cache/
 .streamlit/logs/
+
+# Streamlit Secrets（APIキー等）
+secrets.toml
+.streamlit/secrets.toml

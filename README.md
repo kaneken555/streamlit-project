@@ -26,7 +26,7 @@ streamlit-project/
 ├── app.py # Streamlitアプリ本体（Ollama + RAG）
 ├── ingest.py # ドキュメントをベクトルDBに登録するスクリプト
 ├── requirements.txt # 依存パッケージ
-├── Makefile # （任意）便利コマンド
+├── Makefile # 便利コマンド
 │
 ├── docs/ # 検索対象ドキュメント
 │ ├── aws_saa.txt
@@ -34,7 +34,6 @@ streamlit-project/
 │
 ├── chroma_db/ # Chromaの永続ベクトルデータ（自動生成）
 └── .streamlit/
-└── secrets.toml # （任意）秘密設定（ignore推奨）
 ```
 
 ---
