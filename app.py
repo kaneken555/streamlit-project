@@ -37,7 +37,7 @@ def get_vectordb():
 
 client, col, embed = get_vectordb()
 
-def retrieve_context(query: str, top_k: int = 4):
+def retrieve_context(query: str, top_k: int = 6):
     """e5 の推奨プレフィックスを使って検索→上位k件を連結"""
     try:
         qvec = embed.encode([f"query: {query}"], normalize_embeddings=True).tolist()[0]
@@ -185,7 +185,7 @@ for m in st.session_state.messages:
 # ========================================
 if user_input := st.chat_input("メッセージを入力…"):
     # 日本語出力を安定させる補助行
-    user_input = user_input.strip() + "\n\n必ず日本語で答えてください。"
+    user_input = user_input.strip()
 
     # まずはユーザー発話を履歴へ
     st.session_state.messages.append({"role": "user", "content": user_input})
